@@ -9,8 +9,15 @@ html{
 }
 
 .header{
+    width: 100%;
     height: 46px;
     background-color: black;
+    position: fixed;
+    top: 0;
+}
+
+.nav{
+    display: inline-block;
 }
 
 .nav>li{
@@ -62,6 +69,25 @@ html{
 }
 
 
+.nav .nav-arrow-down{
+    font-size: 11px;
+}
+
+.header .search-btn{
+    float: right;
+    padding: 0 21px;
+}
+
+.header .search-icon{
+    color: white;
+    font-size: 16px;
+    line-height: 46px;
+}
+
+.header .search-btn:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
 
 .slider{
     
