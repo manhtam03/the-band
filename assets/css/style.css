@@ -45,6 +45,10 @@ html{
     width: 33.33333%;
 }
 
+.main{
+    overflow: hidden;
+}
+
 .header{
     width: 100%;
     height: 46px;
@@ -76,6 +80,7 @@ html{
     line-height: 46px;
     padding: 0 24px;
     display: block;
+    font-size: 15px;
 }
 
 .nav .subnav li:hover a,
@@ -110,15 +115,33 @@ html{
     font-size: 11px;
 }
 
+.header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.header .mobile-menu-btn,
 .header .search-btn{
     float: right;
     padding: 0 21px;
 }
 
+
+.header .menu-icon,
 .header .search-icon{
     color: white;
     font-size: 16px;
     line-height: 46px;
+}
+
+.header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+
+.mobile-menu-btn:hover .menu-icon{
+    color: black ;
 }
 
 .header .search-btn:hover{
@@ -154,8 +177,11 @@ html{
 
 .content .content-section{
     width: 800px;
+    max-width: 100%;
     margin: auto;
-    padding: 64px 0;
+    padding: 64px 0 112px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .content .section-heading{
@@ -396,12 +422,12 @@ html{
 }
 
 .contact-info{
-    font-size: 18px;
-    line-height: 1.4;
+    font-size: 17px;
+    line-height: 1.6;
 }
 
 .contact-info i{
-    /* width: 1px; */
+    width: 31px;
     display: inline-block;
 }
 
@@ -461,3 +487,4 @@ html{
 .copyright a{
     color: #757575; 
 }
+
